@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+public class Testweather
+{
+  public static void main(String[] arge)
+	  {
+
+
+	   java.util.Scanner s = new java.util.Scanner(System.in);
+	  
+         System.out.println("欢迎使用！");
+         System.out.println("1表示下雨，0表示晴天");
+         System.out.println("1表示男，0表示女");
+	     System.out.println("温度为数字\n");
+       //接收性别
+	   System.out.print("请输入性别：");
+	   int sex = s.nextInt();
+	   
+	   //接受天气的状况
+	   System.out.print("请输入天气怎样:");
+	   int weather = s.nextInt();
+		
+		 //判断
+		 if(weather==1)
+		 {
+            //System.out.println("雨天");
+			 if(sex==1)
+			 {
+				System.out.println("带一把大黑伞");	
+
+			 }
+			 else if(sex==0)
+			 {
+				System.out.println("带小花伞");		
+
+			 }
+			 else 
+			 {
+				System.out.println("你的性别是怎么回事!");
+			 }
+		 }
+		 else if(weather==0)
+		 {
+            System.out.println("铁汁，晴天啊，多好的天吖！");
+			//接收天气温度
+			System.out.print("请输入天气温度");
+             int tem = s.nextInt(); 
+
+			 if(tem>30)
+			 {
+				if(sex==1)
+				 {
+					System.out.println("戴墨镜!");
+
+				 }
+				 else if(sex==0)
+                 {
+					
+					System.out.println("擦防晒霜");
+
+                 }
+				 else
+				 {
+					 System.out.println("你的性别是怎么回事！");
+					
+				 }
+			  if(tem<30)
+				  {
+					
+                     System.out.println("铁汁，天气非常的奥力给啊！");
+
+
+				  }
+
+			 }
+
+		 }
+		 else
+		  {
+			System.out.println("你怎么回事！只规定了两种天气");
+
+		  }
+
+
+
+
+
+			
+	  }
+ 
+
+
+}
